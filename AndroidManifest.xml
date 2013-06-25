@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.janpeuker.apps.gonzonotes"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="14"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="GonzonotesApplication"
+        android:icon="@drawable/note"
+        android:label="@string/app_name"
+        android:allowBackup="true">
+        <activity
+            android:name=".GonzonotesActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+	<provider
+	       android:authorities="de.janpeuker.apps.gonzonotes.provider"
+	       android:name=".provider.NotesProvider"
+	       android:exported="false"
+	       android:enabled="true"
+	       android:multiprocess="true"
+	       >
+	</provider> 
+        
+    </application>
+
+</manifest>

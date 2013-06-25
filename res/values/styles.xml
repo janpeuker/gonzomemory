@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="GonzonoteInputText" parent="android:Widget.Holo.EditText">
+        <item name="android:textSize">30sp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:inputType">textCapSentences</item>
+    </style>
+</resources>

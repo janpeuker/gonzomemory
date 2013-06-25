@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GonzoNotes</string>
+    
+    <string name="texthello">Hallo GonzoNotes, bitte einen Text eingeben</string>
+    
+    <string name="buttonStart">Speichern</string>
+     <string name="checkboxShowReadable">Lesbare Meldung</string>
+</resources>
